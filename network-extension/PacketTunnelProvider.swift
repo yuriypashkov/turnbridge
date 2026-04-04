@@ -7,7 +7,7 @@ import WireGuardKit
 import WireGuardKitGo
 import os
 
-let sharedLogger = Logger(subsystem: "com.netlab.TurnBridge.network-extension", category: "wgtunnel")
+let sharedLogger = Logger(subsystem: "ru.myOrg.pashkov.TurnBridge.network-extension", category: "wgtunnel")
 
 enum PacketTunnelProviderError: String, Error {
     case invalidProtocolConfiguration
