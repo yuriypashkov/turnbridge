@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219814B02F810A0C000CE3E2 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219814AF2F810A0C000CE3E2 /* libwg-go.a */; };
 		A7EBA6472F606A38003CA7F3 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EBA6462F606A38003CA7F3 /* NetworkExtension.framework */; };
 		A7EBA64F2F606A38003CA7F3 /* network-extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A7EBA6442F606A38003CA7F3 /* network-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A7EBA65B2F606BB7003CA7F3 /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7EBA65A2F606BB7003CA7F3 /* WireGuardKit */; };
@@ -19,13 +20,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = A7EBA6432F606A38003CA7F3;
 			remoteInfo = "network-extension";
-		};
-		A7EBA65C2F606C00003CA7F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A7EBA6242F606924003CA7F3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A7EBA6552F606B0F003CA7F3;
-			remoteInfo = WireguardGoBridge;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -44,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		219814AF2F810A0C000CE3E2 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "script/libwg-go.a"; sourceTree = "<group>"; };
 		A7EBA62C2F606924003CA7F3 /* TurnBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurnBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7EBA6442F606A38003CA7F3 /* network-extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "network-extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7EBA6462F606A38003CA7F3 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
@@ -97,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219814B02F810A0C000CE3E2 /* libwg-go.a in Frameworks */,
 				A7EBA65B2F606BB7003CA7F3 /* WireGuardKit in Frameworks */,
 				A7EBA6472F606A38003CA7F3 /* NetworkExtension.framework in Frameworks */,
 			);
@@ -127,30 +123,13 @@
 		A7EBA6452F606A38003CA7F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				219814AF2F810A0C000CE3E2 /* libwg-go.a */,
 				A7EBA6462F606A38003CA7F3 /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXLegacyTarget section */
-		A7EBA6552F606B0F003CA7F3 /* WireguardGoBridge */ = {
-			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = A7EBA6562F606B0F003CA7F3 /* Build configuration list for PBXLegacyTarget "WireguardGoBridge" */;
-			buildPhases = (
-			);
-			buildToolPath = "$(PROJECT_DIR)/script/build_wireguard_go_bridge.sh";
-			dependencies = (
-			);
-			name = WireguardGoBridge;
-			packageProductDependencies = (
-			);
-			passBuildSettingsInEnvironment = 1;
-			productName = WireguardGoBridge;
-		};
-/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		A7EBA62B2F606924003CA7F3 /* TurnBridge */ = {
@@ -188,7 +167,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A7EBA65D2F606C00003CA7F3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A7EBA6482F606A38003CA7F3 /* network-extension */,
@@ -217,9 +195,6 @@
 					A7EBA6432F606A38003CA7F3 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
-					A7EBA6552F606B0F003CA7F3 = {
-						CreatedOnToolsVersion = 26.0.1;
-					};
 				};
 			};
 			buildConfigurationList = A7EBA6272F606924003CA7F3 /* Build configuration list for PBXProject "TurnBridge" */;
@@ -241,7 +216,6 @@
 			targets = (
 				A7EBA62B2F606924003CA7F3 /* TurnBridge */,
 				A7EBA6432F606A38003CA7F3 /* network-extension */,
-				A7EBA6552F606B0F003CA7F3 /* WireguardGoBridge */,
 			);
 		};
 /* End PBXProject section */
@@ -285,11 +259,6 @@
 			isa = PBXTargetDependency;
 			target = A7EBA6432F606A38003CA7F3 /* network-extension */;
 			targetProxy = A7EBA64D2F606A38003CA7F3 /* PBXContainerItemProxy */;
-		};
-		A7EBA65D2F606C00003CA7F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A7EBA6552F606B0F003CA7F3 /* WireguardGoBridge */;
-			targetProxy = A7EBA65C2F606C00003CA7F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -421,7 +390,7 @@
 				CODE_SIGN_ENTITLEMENTS = TurnBridge/TurnBridge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4524FJSV52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -435,7 +404,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.netlab.TurnBridge;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.myOrg.pashkov.TurnBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -455,7 +424,7 @@
 				CODE_SIGN_ENTITLEMENTS = TurnBridge/TurnBridge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4524FJSV52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -469,7 +438,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.netlab.TurnBridge;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.myOrg.pashkov.TurnBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -487,7 +456,7 @@
 				CODE_SIGN_ENTITLEMENTS = "network-extension/network_extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4524FJSV52;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "network-extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "network-extension";
@@ -498,8 +467,12 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/script",
+				);
 				MARKETING_VERSION = 1.2.4;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.netlab.TurnBridge.network-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.myOrg.pashkov.TurnBridge.network-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -517,7 +490,7 @@
 				CODE_SIGN_ENTITLEMENTS = "network-extension/network_extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4524FJSV52;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "network-extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "network-extension";
@@ -528,8 +501,12 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/script",
+				);
 				MARKETING_VERSION = 1.2.4;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.netlab.TurnBridge.network-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.myOrg.pashkov.TurnBridge.network-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -538,31 +515,6 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A7EBA6572F606B0F003CA7F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEBUGGING_SYMBOLS = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A7EBA6582F606B0F003CA7F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -592,15 +544,6 @@
 			buildConfigurations = (
 				A7EBA6512F606A38003CA7F3 /* Debug */,
 				A7EBA6522F606A38003CA7F3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A7EBA6562F606B0F003CA7F3 /* Build configuration list for PBXLegacyTarget "WireguardGoBridge" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A7EBA6572F606B0F003CA7F3 /* Debug */,
-				A7EBA6582F606B0F003CA7F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
