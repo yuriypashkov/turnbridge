@@ -3,7 +3,7 @@ import SwiftUI
 struct GlobalSettingsView: View {
     @AppStorage("excludeAPNs") private var excludeAPNs = false
     @AppStorage("excludeCellularServices") private var excludeCellularServices = false
-    @AppStorage("excludeLocalNetworks") private var excludeLocalNetworks = true
+    @AppStorage("excludeLocalNetworks") private var excludeLocalNetworks = false
 
     var body: some View {
         Form {
