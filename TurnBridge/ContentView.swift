@@ -72,6 +72,15 @@ struct ContentView: View {
                     }
                     .disabled(vpnStatus == .connecting || vpnStatus == .disconnecting || store.selectedProfile == nil)
                     .padding(.horizontal, 40)
+                    
+                    Button(action: app.turnOffTunnel) {
+                        Text("STOP")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 18)
+                    }
+                    .padding(.horizontal, 40)
                 }
 
                 Spacer()

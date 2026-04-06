@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		219814B02F810A0C000CE3E2 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219814AF2F810A0C000CE3E2 /* libwg-go.a */; };
+		2148197B2F83003B00686635 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 219814AF2F810A0C000CE3E2 /* libwg-go.a */; };
 		A7EBA6472F606A38003CA7F3 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EBA6462F606A38003CA7F3 /* NetworkExtension.framework */; };
 		A7EBA64F2F606A38003CA7F3 /* network-extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A7EBA6442F606A38003CA7F3 /* network-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A7EBA65B2F606BB7003CA7F3 /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7EBA65A2F606BB7003CA7F3 /* WireGuardKit */; };
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219814B02F810A0C000CE3E2 /* libwg-go.a in Frameworks */,
+				2148197B2F83003B00686635 /* libwg-go.a in Frameworks */,
 				A7EBA65B2F606BB7003CA7F3 /* WireGuardKit in Frameworks */,
 				A7EBA6472F606A38003CA7F3 /* NetworkExtension.framework in Frameworks */,
 			);
@@ -403,7 +403,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.myOrg.pashkov.TurnBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -437,7 +437,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.myOrg.pashkov.TurnBridge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -471,7 +471,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/script",
 				);
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.myOrg.pashkov.TurnBridge.network-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -505,7 +505,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/script",
 				);
-				MARKETING_VERSION = 1.2.4;
+				MARKETING_VERSION = 1.2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.myOrg.pashkov.TurnBridge.network-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
